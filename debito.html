@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Multa, Juros e Parcelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Multa e Intereses</h1>
+        <label for="debito">Valor do Débito:</label>
+        <input type="number" id="debito" placeholder="Ingrese el valor del débito">
+        <label for="atraso">Dias de Atraso:</label>
+        <input type="number" id="atraso" placeholder="Ingrese los dias de atraso">
+
+        <button onclick="calcularDebito()">Calcular</button>
+        <button onclick="borrarCeldas()">Limpar</button>
+
+        <p>Percentual de Multa: <span id="multa"></span></p>
+        <p>Percentual de Intereses: <span id="juros"></span></p>
+        <p>Valor Total a Pagar: <span id="resultado"></span></p>
+
+    </div>
+    <!-- Pie de página con la hora actual -->
+    <footer id="HoraActual">
+        © 2023 Desarrollador: Kevin Sum | Hora actual: <span id="horaActual"></span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+
+</html>
